@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './post2.component.html',
   styleUrls: ['./post2.component.scss']
 })
-export class Post2Component{
+export class Post2Component {
 }
