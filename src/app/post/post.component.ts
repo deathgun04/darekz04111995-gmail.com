@@ -37,45 +37,46 @@ export class PostComponent implements
   OnDestroy
 {
 
-  @Input() post: Post
-  @Output() onRemove = new EventEmitter<number>()
-  @ContentChild('info', {static: true}) infoRef: ElementRef
+  @Input() post: Post;
+  // tslint:disable-next-line:no-output-on-prefix
+  @Output() onRemove = new EventEmitter<number>();
+  @ContentChild('info', {static: true}) infoRef: ElementRef;
 
   removePost() {
-    this.onRemove.emit(this.post.id)
+    this.onRemove.emit(this.post.id);
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('ngOnChanges', changes)
+    console.log('ngOnChanges', changes);
   }
 
   ngOnInit() {
-    console.log('ngOnInit')
+    console.log('ngOnInit');
     // console.log(this.infoRef.nativeElement)
   }
 
   ngDoCheck(): void {
-    console.log('ngDoCheck')
+    console.log('ngDoCheck');
   }
 
   ngAfterContentInit(): void {
-    console.log('ngAfterContentInit')
+    console.log('ngAfterContentInit');
   }
 
   ngAfterContentChecked(): void {
-    console.log('ngAfterContentChecked')
+    console.log('ngAfterContentChecked');
   }
 
   ngAfterViewInit(): void {
-    console.log('ngAfterViewInit')
+    console.log('ngAfterViewInit');
   }
 
   ngAfterViewChecked(): void {
-    console.log('ngAfterViewChecked')
+    console.log('ngAfterViewChecked');
   }
 
   ngOnDestroy(): void {
-    console.log('ngOnDestroy')
+    console.log('ngOnDestroy');
   }
 
 
